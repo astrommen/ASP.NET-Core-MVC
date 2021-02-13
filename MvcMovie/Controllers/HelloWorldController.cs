@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
 
+// "/[Controller]/[ActionName]/[Parameters]"
+// routing format is set in Configure method in Startup.cs file
+
 namespace MvcMovie.Controllers
 {
   public class HelloWorldController : Controller
@@ -16,9 +19,10 @@ namespace MvcMovie.Controllers
     //
     // GET : /HelloWorld/Welcome
 
-    public string Welcome()
+    public string Welcome(string name, int numTimes = 1)
     {
-      return "This is the Welcome action method...";
+      // return "This is the Welcome action method...";
+      return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
     }
   }
 }
