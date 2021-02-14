@@ -21,11 +21,14 @@ namespace MvcMovie.Controllers
 
     //
     // GET : /HelloWorld/Welcome
-    public string Welcome(string name, int ID=1)
+    public IActionResult Welcome(string name, int numTimes = 1)
     {
       // /Welcome/3?name=John -> Hello John, ID: 3
       // "?" is id param is optional;
-      return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+      ViewData["Message"] = "Hello" + name;
+      ViewData["NumTimes"] = numTimes;
+
+      return View();
     }
   }
 }
