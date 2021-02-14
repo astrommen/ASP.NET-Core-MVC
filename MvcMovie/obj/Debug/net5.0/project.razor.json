@@ -15636,6 +15636,11 @@
       "FilePath": "/home/aja/Desktop/gitProjects/ASP.NET-Core-MVC/MvcMovie/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/aja/Desktop/gitProjects/ASP.NET-Core-MVC/MvcMovie/Views/HelloWorld/Index.cshtml",
+      "TargetPath": "Views\\HelloWorld\\Index.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

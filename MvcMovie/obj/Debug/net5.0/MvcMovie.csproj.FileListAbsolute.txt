@@ -38,3 +38,4 @@
 /home/aja/Desktop/gitProjects/ASP.NET-Core-MVC/MvcMovie/obj/Debug/net5.0/MvcMovie.pdb
 /home/aja/Desktop/gitProjects/ASP.NET-Core-MVC/MvcMovie/obj/Debug/net5.0/MvcMovie.genruntimeconfig.cache
 /home/aja/Desktop/gitProjects/ASP.NET-Core-MVC/MvcMovie/obj/Debug/net5.0/MvcMovie.csproj.CopyComplete
+/home/aja/Desktop/gitProjects/ASP.NET-Core-MVC/MvcMovie/obj/Debug/net5.0/Razor/Views/HelloWorld/Index.cshtml.g.cs

@@ -11,27 +11,20 @@ namespace MvcMovie.Controllers
     //
     // GET: /HelloWorld/
 
-    public string Index()
+    public IActionResult Index()
     {
-      return "This is my default action...";
+      // method uses view template to render
+      // when view file name is specified, default view is returned
+      // default view has same name as action method Index() -> Index.cshtml
+      return View();
     }
 
     //
     // GET : /HelloWorld/Welcome
-
-    // model binding ex
-    // public string Welcome(string name, int numTimes = 1)
     public string Welcome(string name, int ID=1)
     {
-      // return "This is the Welcome action method...";
-
-      // /Welcome?name=John&numTimes=52 -> Hello John, NumTimes is: 52
-      // "?" is a separator with query string following
-      // "&" separates field-value pairs
-      // return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
-
       // /Welcome/3?name=John -> Hello John, ID: 3
-      // "?" is id param is optiona;
+      // "?" is id param is optional;
       return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
     }
   }
