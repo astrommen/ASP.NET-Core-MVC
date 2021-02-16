@@ -1,0 +1,9 @@
+#Vis Studio Files
+*[Oo]bj
+*.log
+obj/
+[Bb]in
+[Dd]ebug*/
+
+#Proect files
+[Bb]uild
