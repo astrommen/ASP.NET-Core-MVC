@@ -25,6 +25,7 @@
     ".NETCoreApp,Version=v5.0": {
       "MvcMovie/1.0.0": {
         "dependencies": {
+          "EntityFramework": "4.2.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
           "Microsoft.AspNetCore.Identity.UI": "5.0.0",
@@ -321,6 +322,17 @@
         },
         "compile": {
           "MvcMovie.dll": {}
+        }
+      },
+      "EntityFramework/4.2.0": {
+        "runtime": {
+          "lib/net40/EntityFramework.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.11026.0"
+          }
+        },
+        "compile": {
+          "lib/net40/EntityFramework.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -3769,6 +3781,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EntityFramework/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OH+pTOMAemO33voRv0ABXPQ/k6X9eBfVEpvTS+SmRe7jSukzudjKG5tClxVNUSBWzz6vlMCrgM1DgOY1/Ct5lA==",
+      "path": "entityframework/4.2.0",
+      "hashPath": "entityframework.4.2.0.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
