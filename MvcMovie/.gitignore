@@ -2,7 +2,7 @@
 *[Oo]bj
 *.log
 obj/
-[Bb]in
+[Bb]in/
 [Dd]ebug*/
 
 #Proect files
