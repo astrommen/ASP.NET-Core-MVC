@@ -3,7 +3,7 @@ Following along the MS ASP.NET tutorial
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-5.0&tabs=visual-studio-code
 
 ## To trust certificate in linux
-   ### clear any existing https certs
+   ## clear any existing https certs
    dotnet dev-certs https --clean
 
    ## generate a https cert
@@ -20,4 +20,8 @@ https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?v
    sudo cp localhost.crt /usr/local/share/ca-certificates
    sudo update-ca-certificates
 
-Select Ctrl+F5 to run without the debugger.
+   Select Ctrl+F5 to run without the debugger.
+
+   ## When creating the db context class, came across  "The type or namespace name '<DBCONTEXT>'  could not be found"
+   first try restarting VSCode
+   next try .NetCLI command "dotnet add package EntityFramework --version 4.2.0", apparently it misses the .dll install and reg in MvcMovie.csproj
